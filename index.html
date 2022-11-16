@@ -7,95 +7,105 @@
     <title>Ecommerce - Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-        .center {
-        text-align: center
-        }
-        </style>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+       
 </head>
 <body>
-    <h1 class="center">Tienda de <span style="color: #037BC0 " >Muebles</span></h1>
-    <nav > 
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <div style="width:auto;height: 100px;background:gray" >
+   <h1 class="center">Tienda de <span style="color: #037BC0 " >Muebles</span></h1>
+    <div class="navbar">
+      <div class="container flex">
+          <nav > 
+              <ul>
+                <li ><a href="#">Inicio</a></li>
+                <li ><a href="#">Nosotros</a></li>
+                <li ><a href="#">Tienda</a></li>
+                <li ><a href="#">Blog</a></li>
+                <li ><a href="#">Galeria</a></li>
+                <li ><a href="#">Contacto</a></li>
+              </ul>
+          </nav>
+          
+      </div>
+   </div>
+    <div id="hero">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <h3 class="center" style="color:whitesmoke">Hero image</h3>
-    </div>
-    <div id="Productos">
-        <h2 class="center">Nuestros Productos</h2>
-        <div id="Fila1">
-           <div style="width: 70%;height: 200px ;float:left">
-            <img src="producto1.jpg"  alt="" width="70%" height="200"  >
-           </div>                    
-           <div class="center" style="width: 30%;height: 200px;float:right;background:#037BC0;">
-                <h3 style="color:white ;">Producto 1 </h3>
-                <p style="color:white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. s amet.</p>
-                <h2 style="color: white ;">12,000</h2>
-                <button style="color: white;background-color: green;"  type="button" class="btn btn-link">Agregar al carrito</button>
-            </div>    
-        </div>
-        <div id="Fila2">
-            <div style="width: 50%;height: 200px ;float:left">
-             <img src="producto2.jpg"  alt="" width="50%" height="200"  >
-            </div>                    
-            <div style="width: 50%;height: 200px ;float: right ;">
-                <img src="producto3.jpg"  alt="" width="25%" height="200"  >
-            </div>    
-            <div class="center" style="width: 50%;height: 200px;float:right;background:#037BC0;">
-                <h3 style="color:white ;">Producto 2 </h3>
-                <p style="color:white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. s amet.</p>
-                <h2 style="color: white ;">12,000</h2>
-                <button style="color: white;background-color: green;"  type="button" class="btn btn-link">Agregar al carrito</button>
-            </div>    
-            <div class="center" style="width: 50%;height: 200px;float:right;background:#037BC0;">
-                <h3 style="color:white ;">Producto 3 </h3>
-                <p style="color:white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. s amet.</p>
-                <h2 style="color: white ;">12,000</h2>
-                <button style="color: white;background-color: green;"  type="button" class="btn btn-link">Agregar al carrito</button>
-            </div>       
-        </div>
-       <div id="Fila3">
-           <div style="width: 33%;height: 200px ;float:left">
-              <img src="producto4.jpg"  alt="" width="50%" height="200"  >
-           </div>     
-           <div style="width: 33%;height: 200px ;float:left">
-             <img src="producto5.jpg"  alt="" width="50%" height="200"  >
-           </div>
-           <div style="width: 33%;height: 200px ;float:left">
-              <img src="producto6.jpg"  alt="" width="50%" height="200"  >
-           </div>
-           <div class="center" style="width: 33%;height: 200px;float:left;background:#037BC0;">
-                <h3 style="color:white ;">Producto 4 </h3>
-                <p style="color:white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. s amet.</p>
-                <h2 style="color: white ;">12,000</h2>
-               <button style="color: white;background-color: green;"  type="button" class="btn btn-link">Agregar al carrito</button>
-           </div>  
-           <div class="center" style="width: 33%;height: 200px;float:left;background:#037BC0;">
-            <h3 style="color:white ;">Producto 5 </h3>
-            <p style="color:white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. s amet.</p>
-            <h2 style="color: white ;">12,000</h2>
-           <button style="color: white;background-color: green;"  type="button" class="btn btn-link">Agregar al carrito</button>
-            </div>  
-                <div class="center" style="width: 33%;height: 200px;float:left;background:#037BC0;">
-                 <h3 style="color:white ;">Producto 6 </h3>
-                 <p style="color:white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. s amet.</p>
-                 <h2 style="color: white ;">12,000</h2>
-                 <button style="color: white;background-color: green;"  type="button" class="btn btn-link">Agregar al carrito</button>
-            </div>  
-        </div>
+       
 
     </div>
+   <div id="Productos">
+    <h2 class="center">Nuestros Productos</h2>
+    <div class="wrapper">
+        
+        <div class="fuimg">
+         <img src="producto1.jpg"  alt=""  >
+        </div>
+        <div class="futex">
+            <h3 style="color:white ;">Producto 1 </h3>
+            <p style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt, mollitia, unde minus rerum nam architecto doloribus adipisci porro beatae quibusdam iusto quis. Tenetur architecto sed at dicta, ut cum!</p>
+            <h2 style="color: white ;">12,000</h2>
+            <button  type="button" class="btn btn-link">Agregar al carrito</button>
+        </div>        
+    </div>
+    <div class="wrapperb">
+       <div class="fdimg">
+            <img src="producto2.jpg"  alt=""  >
+        </div>
+        <div class="fdimgd">
+            <img src="producto5.jpg"  alt=""  >
+        </div>
+        <div class="fttex">
+            <h3 style="color:white ;">Producto 2 </h3>
+            <p style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt, mollitia, unde minus rerum nam architecto doloribus adipisci porro beatae quibusdam iusto quis. Tenetur architecto sed at dicta, ut cum!</p>
+            <h2 style="color: white ;">12,000</h2>
+            <button type="button" class="btn btn-link">Agregar al carrito</button>
+        </div>
+        <div class="fttexd">
+            <h3 style="color:white ;">Producto 3 </h3>
+                <p style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt, mollitia, unde minus rerum nam architecto doloribus adipisci porro beatae quibusdam iusto quis. Tenetur architecto sed at dicta, ut cum!</p>
+                <h2 style="color: white ;">12,000</h2>
+                <button  type="button" class="btn btn-link">Agregar al carrito</button>
+        </div>
+        
+        </div>
+    <div class="wrapperc">    
+        <div class="fcimg">
+            <img src="producto4.jpg"  alt=""  >
+        </div>
+        <div class="fcimgd">
+            <img src="producto5.jpg"  alt=""  >
+        </div>
+        <div class="fcimgt">
+            <img src="producto6.jpg"  alt=""  >
+        </div>
+        <div class="fctex">
+                <h3 style="color:white ;">Producto 4 </h3>
+                <p style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt, mollitia, unde minus rerum nam architecto doloribus adipisci porro beatae quibusdam iusto quis. Tenetur architecto sed at dicta, ut cum!</p>
+                <h2 style="color: white ;">12,000</h2>
+               <button type="button" class="btn btn-link">Agregar al carrito</button>
+        </div>
+        <div class="fctexd">
+            <h3 style="color:white ;">Producto 4 </h3>
+            <p style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt, mollitia, unde minus rerum nam architecto doloribus adipisci porro beatae quibusdam iusto quis. Tenetur architecto sed at dicta, ut cum!</p>
+            <h2 style="color: white ;">12,000</h2>
+           <button type="button" class="btn btn-link">Agregar al carrito</button>
+        </div>
+        <div class="fctext">
+            <h3 style="color:white ;">Producto 4 </h3>
+                <p style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt, mollitia, unde minus rerum nam architecto doloribus adipisci porro beatae quibusdam iusto quis. Tenetur architecto sed at dicta, ut cum!</p>
+                <h2 style="color: white ;">12,000</h2>
+               <button type="button" class="btn btn-link">Agregar al carrito</button>
+        </div>
+    </div>
+    </div>
+</div>
+    
 
     <div id="Categoria">
-        <h2>Categorias de Productos</h2>
+        <h2 class="center">Categorias de Productos</h2>
         
             <div style="width: 33%;height: 200px ;float:left">
                 <img src="categoria1.jpg"  alt="" width="50%" height="200"  >
@@ -117,58 +127,60 @@
     </div>
     <br>
 
-    <footer>
-        <div style="width: 33%;float:left">
-            <h3>Categorias</h3>
-            <nav > 
-                <ul style="color: black;">
-                    <a href="#" style="color:black ;">Cocina</a>
-                    <br>
-                    <a href="#" style="color:black ;">Oficina</a>
-                    <br>
-                    <a href="#" style="color:black ;">Jardin</a>
-                    <br>
-                    <a href="#" style="color:black ;">Cochera</a>
-                    <br>
-                    <a href="#" style="color:black ;">Dormitorios</a>
-                    
-                </ul>
-            </nav>
-
-        </div>
-        <div style="width: 33%;float:left">
-            <h3>Sobre Nosotros</h3>
-            <nav > 
-                <ul style="color: black;">
-                    <a href="#" style="color:black ;">Nuestra Historia</a>
-                    <br>
-                    <a href="#" style="color:black ;">Mision</a>
-                    <br>
-                    <a href="#" style="color:black ;">Vision</a>
-                    <br>
-                    <a href="#" style="color:black ;">Valores</a>
-                    <br>
-                    <a href="#" style="color:black ;">Carrera</a>
-                    <br>
-                    <a href="#" style="color:black ;">Politicas de privacidad</a>
-                    <br>
-                    <a href="#" style="color:black ;">Terminos del servicio</a>
-                    
-                </ul>
-            </nav>
-
-        </div>    
-        <div style="width: 33%;float:left">
-            <h3>Soporte</h3>
-            <ul>
-                    <a href="#" style="color:black ;">Preguntas Frecuentes</a>
-                    <br>
-                    <a href="#" style="color:black ;">Ayuda en linea</a>
-                    <br>
-                    <a href="#" style="color:black ;">Confianza y seguridad</a>
-            </ul>
-        </div>    
-
-    </footer>
+    
 </body>
+<footer>
+    <div class="fot">
+        <div class="container flex">
+            <nav>
+            <ul>
+                <li><h3>Categorias</h3>
+                    <div class="fotli">
+                        <nav > 
+                           <ul >
+                            <li><a href="#" >Cocina</a></li>
+                            <li><a href="#" >Oficina</a></li>
+                            <li><a href="#" >Jardin</a></li>         
+                            <li><a href="#" >Cochera</a></li>           
+                            <li><a href="#" >Dormitorios</a></li>
+                    
+                           </ul>
+                       </nav>
+                    </div>
+                  
+                </li>
+                <li><h3>Sobre Nosotros</h3>
+                    <div class="fotli">
+                        <nav > 
+                           <ul >
+                            <li><a href="#" >Nuestra Historia</a>
+                            <li><a href="#" >Mision</a></li>
+                            <li><a href="#" >Vision</a></li>
+                            <li><a href="#" >Valores</a></li>
+                            <li><a href="#" >Carrera</a></li>
+                            <li><a href="#" >Politicas de privacidad</a></li>
+                            <li><a href="#" >Terminos del servicio</a></li>
+                               
+                           </ul>
+                       </nav>
+                   </div>
+                </li>
+                <li><h3>Soporte</h3>
+                    <div class="fotli">
+                        <nav > 
+                           <ul>
+                               <li><a href="#" >Preguntas Frecuentes</a></li>
+                               <li><a href="#" >Ayuda en linea</a></li>
+                               <li><a href="#" >Confianza y seguridad</a></li>
+                           </ul>
+                       </nav>
+                    
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>   
+</div>
+
+</footer>
 </html>

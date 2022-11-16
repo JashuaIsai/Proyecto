@@ -1,7 +1,287 @@
-/*reglas generales*/
+                                    /*reglas generales*/
+.center h1{
+    color: #037bc0;
+}
+body{
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;  
+    
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+image{
+    size:1.6rem;
+}
+#hero{
+    background-image:url("/principal.jpg");
+    background-size: cover;
+    height: 25rem;
+    background-position: 0%;
+}
+.fot{
+  padding-left: 10em;
+}
+.Categoria{
+  padding-left: 10em;
+}
 
-/*Media Query*/
+                        /*FLEXBOX*/
+li{
+    list-style-type: none;
+    
+  }
+  .navbar{
+    background-color:gray;
+    height: 50px;
+    
+  }
+  .navbar a{
+    color: white;
+   padding: 9px;
+    margin: 0 15px;
+  }
+  .navbar .flex{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 100%;
+  }
+.navbar ul{
+    display: flex;
+}  
+.center {
+    text-align: center
+ }
 
-/** Reescribir colores */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-/** Productos */
+nav li{
+  flex:content;
+}
+
+nav ul {
+  display: flex;
+  margin: 0 -10px;
+}
+.fotli nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 2em;
+  display:inline-table;
+  text-align: center;
+}
+.fotli nav li{
+  flex: auto;
+}
+/*GRID*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+  
+}
+.wrapper {
+  max-width:1400px;
+  margin: 10px auto;
+  
+}
+.wrapper h3 {
+ font-size: 3em;
+ text-align: center; 
+}
+.wrapper h2 {
+  font-size: 2em;
+  text-align: center; 
+ }
+ .wrapper p {
+  font-size: 1em;
+  text-align: center; 
+ }
+ .wrapper button {
+  color: white;background-color: green;
+  
+  text-align: center; 
+
+ }
+ .wrapperb h3 {
+  font-size: 3em;
+  text-align: center; 
+ }
+ .wrapperb h2 {
+   font-size: 2em;
+   text-align: center; 
+  }
+  .wrappebr p {
+   font-size: 1em;
+   text-align: center; 
+  }
+  .wrapperb button {
+   color: white;background-color: green;
+   
+   text-align: center; 
+ 
+  }
+  .wrapperc h3 {
+    font-size: 3em;
+    text-align: center; 
+   }
+   .wrapperc h2 {
+     font-size: 2em;
+     text-align: center; 
+    }
+    .wrapperc p {
+     font-size: 1em;
+     text-align: center; 
+    }
+    .wrapperc button {
+     color: white;background-color: green;
+     
+     text-align: center; 
+   
+    }
+
+
+.wrapperb {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+}
+.wrapperb {
+  max-width:1400px;
+  margin: 10px auto;
+}
+.wrapperc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+}
+.wrapperc {
+  max-width:1400px;
+  margin: 10px auto;
+}
+* {
+  box-sizing: border-box;
+}
+.fuimg {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  
+}
+.futex {
+  background:#037BC0;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.fdimgd {
+  
+  grid-column: 2 ;
+  grid-row: 1;
+}
+.fttex {
+  grid-column: 1;
+  grid-row: 2;
+  background:#037BC0;
+}
+.fttexd {
+  background:#037BC0;
+  grid-column: 2;
+  grid-row: 2;
+}
+.fcimg {
+  background:blueviolet;
+  grid-column: 1;
+  grid-row: 1;
+}
+.fcimgd {
+  background:blueviolet;
+  grid-column: 2;
+  grid-row: 1;
+}
+.fcimgt {
+  background:blueviolet;
+  grid-column: 3;
+  grid-row: 1;
+}
+.fctex {
+  background:#037BC0;
+  grid-column: 1;
+  grid-row: 2;
+}
+.fctexd {
+  background:#037BC0;
+  grid-column: 2;
+  grid-row: 2;
+}
+.fctext {
+  background:#037BC0;
+  grid-column: 3;
+  grid-row: 2;
+}
+.fuimg img{
+  width: 100%;
+  height: 400px;
+
+}
+.futex img{
+  width: 100%;
+  height:100%;
+}
+
+.fdimg img{
+  width: 100%;
+  height: 100%;
+}
+
+.fdimgd img{
+  width: 100%;
+  height:100%;
+}
+.fttex img{
+  width: 100%;
+  height:100%;
+}
+.fttexd img{
+  width: 100%;
+  height:100%;
+}
+.fcimg img{
+  width: 100%;
+  height:100%;
+}
+.fcimgd img{
+  width: 100%;
+  height: 100%;
+}
+.fcimgt img{
+  width: 100%;
+  height: 100%;
+}
+.fctex
+{
+  width: 100%;
+  height: 100%;
+}
+.fctexd{
+  width: 100%;
+  height: 100%;
+}
+.fctext{
+  width: 100%;
+  height: 100%;
+}
+
