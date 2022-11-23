@@ -385,4 +385,28 @@ grid-column: 1/4;
   margin-left: 50%;
   transform: translateX(-50%);  
  }
+/*****************ANIMACION**********************/
+.cat1 img{
+  transition: .5s;
+  
+}
+.cat1 img:hover{
+  transform: scale(1.2);
+  overflow:hidden;
+}
+.cat2 img{
+  transition: .5s;
+}
+.cat2 img:hover{
+  transform: scale(1.2);
+  overflow:hidden;
+}
+.cat3 img{
+  transition: .5s;
+}
+.cat3 img:hover{
+  transform: scale(1.2);
+  overflow:hidden;
+}
 
+ 
