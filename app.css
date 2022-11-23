@@ -1,4 +1,4 @@
-                                    /*reglas generales*/
+/*********************reglas generales**********************/
 .center h1{
     color: #037bc0;
 }
@@ -25,14 +25,14 @@ image{
     height: 25rem;
     background-position: 0%;
 }
+
 .fot{
-  padding-left: 10em;
+   padding-left: 10em;
 }
 .Categoria{
-  padding-left: 10em;
+    padding-bottom: 10em;
 }
-
-                        /*FLEXBOX*/
+/**********************FLEXBOX**********************/
 li{
     list-style-type: none;
     
@@ -76,7 +76,6 @@ nav ul {
 }
 .fotli nav ul {
   list-style: none;
-  margin: 0;
   padding-left: 2em;
   display:inline-table;
   text-align: center;
@@ -84,7 +83,7 @@ nav ul {
 .fotli nav li{
   flex: auto;
 }
-/*GRID*/
+/**********************GRID**********************/
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -110,10 +109,11 @@ nav ul {
   text-align: center; 
  }
  .wrapper button {
-  color: white;background-color: green;
-  
-  text-align: center; 
-
+  color: white;
+  background-color:var(--bs-green);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
  }
  .wrapperb h3 {
   font-size: 3em;
@@ -128,10 +128,11 @@ nav ul {
    text-align: center; 
   }
   .wrapperb button {
-   color: white;background-color: green;
-   
-   text-align: center; 
- 
+   color: white; 
+   background-color:var(--bs-green);
+   text-align: center;  
+   margin-left: 50%;
+  transform: translateX(-50%);
   }
   .wrapperc h3 {
     font-size: 3em;
@@ -146,10 +147,11 @@ nav ul {
      text-align: center; 
     }
     .wrapperc button {
-     color: white;background-color: green;
-     
+     color: white;
+     background-color:var(--bs-green);;
      text-align: center; 
-   
+     margin-left: 50%;
+     transform: translateX(-50%);  
     }
 
 
@@ -182,7 +184,7 @@ nav ul {
   
 }
 .futex {
-  background:#037BC0;
+  background: var(--bs-blue );
   grid-column: 3 / 4;
   grid-row: 1 / 2;
 }
@@ -195,10 +197,10 @@ nav ul {
 .fttex {
   grid-column: 1;
   grid-row: 2;
-  background:#037BC0;
+  background: var(--bs-blue );
 }
 .fttexd {
-  background:#037BC0;
+  background: var(--bs-blue );
   grid-column: 2;
   grid-row: 2;
 }
@@ -218,19 +220,31 @@ nav ul {
   grid-row: 1;
 }
 .fctex {
-  background:#037BC0;
+  background: var(--bs-blue );
   grid-column: 1;
   grid-row: 2;
 }
 .fctexd {
-  background:#037BC0;
+  background: var(--bs-blue );
   grid-column: 2;
   grid-row: 2;
 }
 .fctext {
-  background:#037BC0;
+  background: var(--bs-blue );
   grid-column: 3;
   grid-row: 2;
+}
+.cat1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.cat2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.cat3 {
+  grid-column: 3;
+  grid-row: 1;
 }
 .fuimg img{
   width: 100%;
@@ -271,6 +285,18 @@ nav ul {
   width: 100%;
   height: 100%;
 }
+.cat1 img{
+  width: 100%;
+  height:100%;
+}
+.cat2 img{
+  width: 100%;
+  height: 100%;
+}
+.cat3 img{
+  width: 100%;
+  height: 100%;
+}
 .fctex
 {
   width: 100%;
@@ -284,4 +310,79 @@ nav ul {
   width: 100%;
   height: 100%;
 }
+/*********bootstrap y queries**************/
+@media (min-width: 768px){
+  .hero{
+    height: 55rem;
+  }
+  }
+@media (min-width: 500px){
+    .hero{
+      height: 85rem;
+    }
+    }
+
+@media (max-width: 768px){
+      .fuimg{
+        grid-column: 1/4; 
+        grid-row: 1 ;
+       }
+     .futex{
+      grid-column: 1/4; 
+        grid-row:  2;
+     }
+}
+@media (max-width: 768px){
+ /*fdimg fdimgd fttex fttexd*/
+  .fdimg{
+    grid-column: 1/4 ;
+    grid-row: 1;
+   }
+ .fttex{
+   grid-column: 1/4; 
+    grid-row:  2;
+ }
+ .fdimgd{
+  grid-column: 1/4 ;
+  grid-row: 3;
+ }
+.fttexd{
+grid-column: 1/4; 
+  grid-row:  4;
+}
+}
+@media (max-width: 768px){
+  /*fdimg fdimgd fttex fttexd*/
+   .fcimg{
+     grid-column: 1/4 ;
+     grid-row: 1;
+    }
+  .fctex{
+    grid-column: 1/4; 
+     grid-row:  2;
+  }
+  .fcimgd{
+   grid-column: 1/4 ;
+   grid-row: 3;
+  }
+ .fctexd{
+ grid-column: 1/4; 
+   grid-row:  4;
+ }
+ .fcimgt{
+  grid-column: 1/4 ;
+  grid-row: 5;
+ }
+.fctext{
+grid-column: 1/4; 
+  grid-row:  6;
+}
+ }
+ .cat1 a, .cat2 a,.cat3 a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin-left: 50%;
+  transform: translateX(-50%);  
+ }
 
